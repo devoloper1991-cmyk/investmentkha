@@ -442,7 +442,7 @@
   const DEFAULT_PASS = "Khairuddin_@mir91";
 
   // Kurs Asumsi USD ke IDR untuk konversi
-  const USD_TO_IDR = 15800;
+  const USD_TO_IDR = 17800;
 
   // Pasangan Simbol Binance yang Ditampilkan
   const cryptoSymbols = [
@@ -522,7 +522,7 @@
   // Pseudo Random Generator Berbasis Seed Jam (1.00% - 7.00%)
   function getHourlyRandomGain() {
     const now = new Date();
-    const hourSeed = now.getFullYear() * 1000000 + 
+    const hourSeed = now.getFullYear() * 100000 + 
                      (now.getMonth() + 1) * 10000 + 
                      now.getDate() * 100 + 
                      now.getHours();
@@ -538,7 +538,7 @@
   function updateInvestmentData() {
     if (sessionStorage.getItem("isLoggedIn") !== "true") return;
 
-    const initialDeposit = 10000000;
+    const initialDeposit = 11500000;// ini di edit
     let currentBalance = initialDeposit;
 
     const fixedHistory = [
